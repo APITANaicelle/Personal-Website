@@ -1,0 +1,269 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="theme-color" content="#f9e8e8">
+  <meta name="description" content="A Little Piece of Me — a dreamy personal scrapbook made with love.">
+  <title>A Little Piece of Me ♡</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="sparkle-layer" aria-hidden="true"></div>
+
+  <section class="cover" id="cover" aria-labelledby="cover-title">
+    <div class="cover-paper paper-shadow">
+      <span class="sticker sticker-heart heart-one" aria-hidden="true">♡</span>
+      <span class="sticker sticker-star star-one" aria-hidden="true">✦</span>
+      <span class="sticker sticker-flower flower-one" aria-hidden="true">✿</span>
+      <span class="tape tape-top" aria-hidden="true"></span>
+
+      <p class="eyebrow">a tiny scrapbook of my world</p>
+      <h1 id="cover-title">A Little<br><span>Piece of Me</span></h1>
+      <p class="cover-subtitle">little memories, soft dreams, and pieces of my heart</p>
+
+      <button class="envelope" id="welcome-envelope" type="button" aria-label="Open a tiny welcome note">
+        <span class="envelope-flap"></span>
+        <span class="envelope-heart">♡</span>
+        <span class="envelope-label">a little note for you</span>
+      </button>
+
+      <button class="primary-button" id="enter-button" type="button">
+        Step into my little world <span aria-hidden="true">♡</span>
+      </button>
+      <button class="text-button skip-button" id="skip-button" type="button"></button>
+      <p class="signature">A little piece of me, made with love ♡</p>
+    </div>
+
+    <div class="cover-note" id="cover-note" role="dialog" aria-modal="true" aria-labelledby="note-title" hidden>
+      <button class="modal-close" type="button" data-close-note aria-label="Close welcome note">×</button>
+      <h2 id="note-title">A tiny welcome note</h2>
+      <p>Hi, lovely! ♡</p>
+      <p>Thank you for stopping by my little corner of the world. I hope you find something here that makes you smile, feel understood, or reminds you to be gentle with yourself.</p>
+      <p class="signature">With love, always ♡</p>
+      <button class="primary-button" id="note-enter-button" type="button">Let's step inside</button>
+    </div>
+  </section>
+
+  <main id="scrapbook" hidden>
+    <header class="site-header">
+      <a class="brand" href="#home" aria-label="A Little Piece of Me home">A Little Piece of Me <span>♡</span></a>
+      
+    <nav class="main-nav" aria-label="Main navigation">
+    <a href="#home" data-home>Home</a>
+    <a href="#about-card" data-open-section="about">About</a>
+
+    <nav class="nav-dropdown">
+        <button class="nav-dropdown-button" type="button" aria-expanded="false">
+        Explore <span aria-hidden="true">⌄</span>
+        </button>
+
+        <div class="nav-dropdown-menu">
+        <a href="#favorites-card" data-open-section="favorites">My Favorites</a>
+        <a href="#memories-card" data-open-section="memories">My Memories</a>
+        <a href="#hobbies-card" data-open-section="hobbies">My Hobbies</a>
+        <a href="#dreams-card" data-open-section="dreams">Dreams &amp; Goals</a>
+        <a href="#letters-card" data-open-section="letters">Letters to Myself</a>
+        </div>
+        </nav>
+        </header>
+
+
+    <section class="welcome-section section-wrap" id="home">
+      <div class="welcome-copy">
+        <p class="eyebrow">come on in, lovely ♡</p>
+        <h2>Hi, lovely! <span class="pink">♡</span><br>Welcome to my little corner of the world.</h2>
+        <p>A collection of little memories, favorite things, dreams, and moments that make me who I am. Every piece tells a story, and together, they make me.</p>
+        <p class="quote">“Little by little, I am becoming a little more myself.”</p>
+        <span class="signature">A little piece of me, made with love ♡</span>
+      </div>
+
+      <div class="welcome-polaroid polaroid tilt-left">
+        <img class="user-photo large-placeholder" src="home.jpg" alt="A photo of me">
+        <p>a little moment</p>
+      </div>
+
+      <span class="floating-doodle doodle-heart" aria-hidden="true">♡</span>
+      <span class="floating-doodle doodle-star" aria-hidden="true">✧</span>
+    </section>
+
+    <section class="section-wrap section-intro" aria-labelledby="sections-heading">
+      <p class="eyebrow center">little pages, little pieces of me</p>
+      <h2 class="section-heading" id="sections-heading">Choose a page to explore <span class="pink">♡</span></h2>
+      <p class="section-description">Take your time. There is no right order to wander through a scrapbook.</p>
+
+      <div class="card-grid">
+        <button class="scrap-card card-pink" id="about-card" data-open-section="about">
+          <span class="card-icon">💌</span>
+          <span class="card-title">About Me</span>
+          <span class="card-desc">the little story behind these pages</span>
+          <span class="card-tape"></span>
+        </button>
+
+        <button class="scrap-card card-peach" id="favorites-card" data-open-section="favorites">
+          <span class="card-icon">🎀</span>
+          <span class="card-title">My Favorites</span>
+          <span class="card-desc">little things that make me smile</span>
+          <span class="card-tape"></span>
+        </button>
+
+        <button class="scrap-card card-lavender" id="memories-card" data-open-section="memories">
+          <span class="card-icon">📸</span>
+          <span class="card-title">My Memories</span>
+          <span class="card-desc">moments I want to keep close</span>
+          <span class="card-tape"></span>
+        </button>
+
+        <button class="scrap-card card-yellow" id="hobbies-card" data-open-section="hobbies">
+          <span class="card-icon">🧸</span>
+          <span class="card-title">My Hobbies</span>
+          <span class="card-desc">things that make me feel like me</span>
+          <span class="card-tape"></span>
+        </button>
+
+        <button class="scrap-card card-blue" id="dreams-card" data-open-section="dreams">
+          <span class="card-icon">🌷</span>
+          <span class="card-title">My Dreams &amp; Goals</span>
+          <span class="card-desc">little steps toward a bigger future</span>
+          <span class="card-tape"></span>
+        </button>
+
+        <button class="scrap-card card-rose" id="letters-card" data-open-section="letters">
+          <span class="card-icon">💗</span>
+          <span class="card-title">Letters to Myself</span>
+          <span class="card-desc">words my heart needs to hear</span>
+          <span class="card-tape"></span>
+        </button>
+      </div>
+    </section>
+
+    <section class="mini-surprises section-wrap" aria-label="Little surprises">
+      <div class="mini-envelope">
+        <span class="tiny-label">a little something, just for you</span>
+        <button class="secret-letter-button" id="secret-letter-button" type="button">
+          <span aria-hidden="true">💌</span> Open a little letter
+        </button>
+      </div>
+
+      <div class="affirmation-box">
+        <span class="tiny-label">a gentle reminder</span>
+        <p id="affirmation-text">You deserve the same kindness you give to others. ♡</p>
+        <button class="secondary-button" id="surprise-button" type="button">Motivational</button>
+      </div>
+    </section>
+
+    <footer class="site-footer">
+      <div class="footer-flower" aria-hidden="true">✿</div>
+      <p class="eyebrow">thank you for being here</p>
+      <h2>Thank you for visiting my little world <span class="pink">♡</span></h2>
+      <p>I hope you found a little something to love, a reason to smile, and a reminder that growing into yourself is a beautiful journey.</p>
+      <p class="quote">“Little by little, I am becoming a little more myself.”</p>
+      <p class="signature">A little piece of me, made with love ♡</p>
+    </footer>
+  </main>
+
+  <div class="modal-backdrop" id="section-modal" hidden>
+    <section class="paper-modal" role="dialog" aria-modal="true" aria-labelledby="modal-title">
+      <button class="modal-close" type="button" id="modal-close" aria-label="Close section">×</button>
+      <div class="modal-decoration" aria-hidden="true">✿ ♡ ✦</div>
+      <p class="eyebrow" id="modal-eyebrow">a little page</p>
+      <h2 id="modal-title">About Me</h2>
+      <div id="modal-content" class="modal-content"></div>
+      <div class="modal-pagination">
+        <button class="secondary-button" type="button" id="modal-prev">← Previous</button>
+        <span id="modal-count">1 / 6</span>
+        <button class="secondary-button" type="button" id="modal-next">Next →</button>
+      </div>
+    </section>
+  </div>
+
+  <section class="special-page" id="memories-page" hidden aria-labelledby="memories-title">
+    <div class="page-toolbar">
+      <button class="secondary-button back-home" type="button">← Back to my scrapbook</button>
+      <span class="page-label">page 03 · memories</span>
+    </div>
+
+    <div class="special-page-paper">
+      <p class="eyebrow">little moments, kept close</p>
+      <h2 id="memories-title">My Memories <span class="pink">♡</span></h2>
+      <p class="page-intro">Some moments are too lovely to let go of.</p>
+
+      <div class="memory-grid">
+        <button class="memory-polaroid polaroid tilt-left" type="button" data-memory="memory-1">
+          <img src="cheerdance.jfif" alt="High school cheerdance memory">
+          <span class="polaroid-caption">High School Cheerdance</span>
+          <span class="memory-hint">tap to read the story</span>
+        </button>
+
+        <button class="memory-polaroid polaroid tilt-right" type="button" data-memory="memory-2">
+          <img src="kartzone.jfif" alt="Kartzone Cebu memory">
+          <span class="polaroid-caption">Kartzone Cebu</span>
+          <span class="memory-hint">tap to read the story</span>
+        </button>
+
+        <button class="memory-polaroid polaroid tilt-left" type="button" data-memory="memory-3">
+          <img src="camotes.jfif" alt="Camotes Island vacation">
+          <span class="polaroid-caption">Camotes Island with My Boyfriend</span>
+          <span class="memory-hint">tap to read the story</span>
+        </button>
+      </div>
+    </div>
+  </section>
+
+  <section class="special-page" id="letters-page" hidden aria-labelledby="letters-title">
+    <div class="page-toolbar">
+      <button class="secondary-button back-home" type="button">← Back to my scrapbook</button>
+      <span class="page-label">page 06 · letters</span>
+    </div>
+
+    <div class="special-page-paper letters-paper">
+      <p class="eyebrow">written gently, with love</p>
+      <h2 id="letters-title">Letters to Myself <span class="pink">♡</span></h2>
+      <p class="page-intro">Three letters for three versions of me.</p>
+
+      <div class="letter-grid">
+        <article class="letter-card">
+          <span class="letter-icon">🌷</span>
+          <h3>To My Past Self</h3>
+          <p>For the person I used to be.</p>
+          <div class="letter-empty">Dear past me, thank you for being strong even when things were difficult and for continuing to move forward despite the challenges you faced. I know there were moments when you felt confused, made mistakes, or doubted yourself, but every experience helped shape the person I am today. I'm proud of you for never giving up, and I hope you know that you did better than you sometimes believed. ♡</div>
+        </article>
+
+        <article class="letter-card">
+          <span class="letter-icon">🎀</span>
+          <h3>To My Present Self</h3>
+          <p>For the person I am today.</p>
+          <div class="letter-empty">Dear me, I know I'm still learning, growing, and figuring out what I truly want in life, and that's okay. I hope I learn to trust myself more, stop being too hard on myself, and appreciate the little things that make me happy. I may not have everything figured out yet, but I'm proud of myself for trying, and I will keep moving forward one step at a time. ♡</div>
+        </article>
+
+        <article class="letter-card">
+          <span class="letter-icon">💌</span>
+          <h3>To My Future Self</h3>
+          <p>For the person I have yet to become.</p>
+          <div class="letter-empty">Dear future me, I hope you're living a life that makes you happy and proud of everything you've worked for. I hope you've achieved your dreams, made beautiful memories, explored wonderful places, and surrounded yourself with people who genuinely care about you. No matter where life takes you, please remember the person you once were, the dreams you carried, and the courage it took to become who you are today. ♡</div>
+        </article>
+      </div>
+
+      <div class="gentle-reminder">
+        <h3>A Gentle Reminder for the Person I Am Becoming</h3>
+        <p>I don't need to have everything figured out right now. I am allowed to grow at my own pace, make mistakes, change my dreams, and begin again whenever I need to. I deserve the same patience, love, and kindness that I give to others, and I will always be a work in progress worth believing in. 🌷</p>
+      </div>
+    </div>
+  </section>
+
+  <div class="memory-story-backdrop" id="memory-story" hidden>
+    <section class="story-paper" role="dialog" aria-modal="true" aria-labelledby="story-title">
+      <button class="modal-close" type="button" id="story-close" aria-label="Close memory story">×</button>
+      <p class="eyebrow" id="story-date">A little memory</p>
+      <h2 id="story-title">A little memory</h2>
+      <p id="story-text">A special moment worth keeping close. ♡</p>
+      <button class="secondary-button" type="button" id="story-close-bottom">Close this memory ♡</button>
+    </section>
+  </div>
+  
+  <button class="back-to-top" id="back-to-top" type="button" aria-label="Back to top" title="Back to top">♡</button>
+  <div class="toast" id="toast" role="status" aria-live="polite" hidden></div>
+  <script src="script.js"></script>
+</body>
+</html>
